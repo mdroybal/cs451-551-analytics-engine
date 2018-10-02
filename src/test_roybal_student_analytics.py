@@ -17,7 +17,7 @@ class Test_Roybal_Student_Analytics(unittest.TestCase):
 	def test_classify_grade(self):
 		"""Unit test for Roybal_Student_Analytics classify_grade method."""
 		s = Student_Analytics()
-		self.assertEqual(s.classify_grade(4.75),"A+")
+		self.assertEqual(s.classify_grade(5.00),"A+")
 
 	def test_element_count(self):
 		"""Unit test for Roybal_Student_Analytics element_count method."""
@@ -27,7 +27,7 @@ class Test_Roybal_Student_Analytics(unittest.TestCase):
 	def test_avg_grade(self):
 		"""Unit test for Roybal_Student_Analytics avg_grade method."""
 		s = Student_Analytics()
-		self.assertEqual(s.classify_grade(s.avg_grade(3)),"A-")
+		self.assertEqual(s.classify_grade(s.avg_grade(3)),"B")
 
 	def test_grade_change(self):
 		"""Unit test for Roybal_Student_Analytics grade_change method."""

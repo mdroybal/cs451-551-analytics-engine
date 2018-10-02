@@ -24,26 +24,26 @@ class Student_Analytics():
 
 	def classify_grade(self,grade_val):
 		"""Return a grade classification from a given grade value"""
-		if grade_val > 4.66:
+		if grade_val >= 5.00:
 			return "A+"
-		elif grade_val > 4.33:
-			return "A"
-		elif grade_val > 4.00:
+		elif grade_val > 4.7:
 			return "A-"
-		elif grade_val > 3.66:
+		elif grade_val > 4.3:
 			return "B+"
-		elif grade_val > 3.33:
+		elif grade_val >= 4.0:
 			return "B"
-		elif grade_val > 3.00:
+		elif grade_val > 3.7:
 			return "B-"
-		elif grade_val > 2.66:
+		elif grade_val > 3.3:
 			return "C+"
-		elif grade_val > 2.33:
+		elif grade_val >= 3.0:
 			return "C"
-		elif grade_val > 2.00:
+		elif grade_val > 2.7:
 			return "C-"
-		else:
+		elif grade_val >1.7:
 			return "D"
+		else:
+			return "F"
 
 	def element_count(self,pos,query):
 		"""Return a total number of elements from a given query and data position"""
